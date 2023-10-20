@@ -1,0 +1,10 @@
+<%-include('../partials/head') %>
+<h1>Show Page</h1>
+<p><strong>Car Id: <%=car.id%></strong></p>
+<h2>Car Make: <%=car.make%></h2>
+<img src="<%=car.image%>" alt="<%=car.make%>" />
+<ul>
+  <li>Year: <%=car.year%></li>
+  <li>Is Used: <%=car.isUsed ? "Yes" : "No"%></li>
+</ul>
+<%-include('../partials/footer')%>

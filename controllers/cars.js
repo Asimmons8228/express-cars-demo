@@ -6,6 +6,13 @@ const index = (req, res) => {
   });
 };
 
+const show = (req, res) => {
+  res.render("cars/show", {
+    car: Car.getOne(req.params.id),
+  });
+};
+
 module.exports = {
   index,
+  show,
 };
